@@ -4,16 +4,15 @@
 
 SmartLibrary, Java dili kullanılarak geliştirilmiş, konsol tabanlı bir kütüphane yönetim sistemidir. Projenin temel amacı, kitap ekleme ,silme , düzenleme ve listeleme, öğrenci ekleme , silme , düzenleme ve listeleme , ödünç alma/iade etme işlemlerini yönetmek için temel CRUD (Create, Read, Update, Delete) operasyonlarını bir SQLite veritabanı üzerinde gerçekleştirmektir.
 
-Uygulama, veritabanı işlemlerini, iş mantığını ve kullanıcı arayüzünü (konsol menüsü) katmanlara ayırarak temiz bir mimari sergiler.
 
 
 ## Özellikler
 
 - **Kitap Ekleme :** Yeni kitap bilgilerini (Başlık, Yazar, Yıl) alarak SQLite veritabanındaki books tablosuna kaydeder.
-- **Kitap Güncelleme/Silme :** Mevcut kitapların bilgilerini günceller. Silme işleminde, kitabın ödünçte olup olmadığını kontrol eder ve aktif ödünç kaydı yoksa veritabanından siler.
+- **Kitap Güncelleme/Silme :** Mevcut kitapların bilgilerini günceller. Silme işleminde, kitabı silme işlemini gerçekleştirir.
 - **Kitapları Listeleme :** Veritabanındaki tüm kitapların listesini ID, Başlık, Yazar ve Yıl bilgileriyle konsola yazdırır.
 - **Öğrenci Ekleme :** Yeni öğrenci bilgilerini (İsim, Bölüm) alarak students tablosuna kaydeder.
-- **Öğrenci Güncelleme/Silme :** Mevcut öğrenci bilgilerini günceller. Silme işleminde, öğrencinin iade etmediği kitap olup olmadığını kontrol eder ve varsa silmeyi engeller yoksa silme işlemini gerçekleştirir.
+- **Öğrenci Güncelleme/Silme :** Mevcut öğrenci bilgilerini günceller. Silme işleminde, silme işlemini gerçekleştirir.
 - **Öğrencileri Listeleme :** Veritabanındaki tüm öğrencilerin listesini ID, İsim ve Bölüm bilgileriyle konsola yazdırır.
 - **Kitap Ödünç Verme :** Öğrenci ve kitap ID'lerini alarak, ödünç verilecek kitabın halihazırda ödünçte olup olmadığını kontrol eder ve uygunsa kitabı ödünç verir.
 - **Öğrencileri Listeleme :** Tüm ödünç geçmişini (ödünç verilmiş/iade edilmiş) listeler.
@@ -45,7 +44,7 @@ Uygulama, veritabanı işlemlerini, iş mantığını ve kullanıcı arayüzün�
 
 - **İndirme/Klonlama:** Projenin zip dosyasını indirin veya Git ile klonlayın.
 
-- **Klasörü Yerleştirme:** Proje klasörünü masaüstünüze veya istediğiniz bir konuma çıkarın.
+- **Klasörü Yerleştirme:** Proje zip veya klasörünü klasör olarak masaüstünüze çıkarın.
 
 - **⚙️ Maven Bağımlılıklarını Yükleme: İntelliJ IDEA, genellikle pom.xml dosyasını açtığınızda sağ alt köşede "Maven projects need to be imported" uyarısı gözükür bu uyarının altındaki load a basarak projeyi çalış hale getirebilirsiniz.**
 
