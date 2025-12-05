@@ -5,7 +5,6 @@
 SmartLibrary, Java dili kullanılarak geliştirilmiş, konsol tabanlı bir kütüphane yönetim sistemidir. Projenin temel amacı, kitap ekleme ,silme , düzenleme ve listeleme, öğrenci ekleme , silme , düzenleme ve listeleme , ödünç alma/iade etme işlemlerini yönetmek için temel CRUD (Create, Read, Update, Delete) operasyonlarını bir SQLite veritabanı üzerinde gerçekleştirmektir.
 
 
-
 ## Özellikler
 
 - **Kitap Ekleme :** Yeni kitap bilgilerini (Başlık, Yazar, Yıl) alarak SQLite veritabanındaki books tablosuna kaydeder.
